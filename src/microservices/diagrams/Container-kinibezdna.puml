@@ -1,6 +1,6 @@
 @startuml
 !includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
-title Kinobezdna — Container Diagram
+title Кинобездна — Container Diagram
 
 Person(user, "User", "Пользователь, мобильная, веб, и смарт тв платформы.")
 
