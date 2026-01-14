@@ -5,7 +5,7 @@ global:
 
 # Image pull secrets
 imagePullSecrets:
-  dockerconfigjson: ewoJImF1dGhzIjogewogICAgImdoY3IuaW8iOiB7CiAgICAgICJhdXRoIjogIllXNWtjbVYzTFdkMWNucG9hVHBuYVhSb2RXSmZjR0YwWHpFeFFVdEpOVFZEU1RCQ1NWWkdZelJOUXpGSWVFNWZkakZzUzNkbFNFZDNRWHA0U0VORlYzRkxSMHd3UjIwemJIVjBSekp2WTI1S2JXdExZbTlTYUhkbmVEZEVSVVJEV2xoV09GbHhhRUptVURVPSIKICAgIH0KICB9LAoJImNyZWRzU3RvcmUiOiAiZGVza3RvcCIsCgkiY3VycmVudENvbnRleHQiOiAiZGVza3RvcC1saW51eCIsCgkicGx1Z2lucyI6IHsKCQkiZGVidWciOiB7CgkJCSJob29rcyI6ICJleGVjIgoJCX0sCgkJInNjb3V0IjogewoJCQkiaG9va3MiOiAicHVsbCxidWlsZHggYnVpbGQiCgkJfQoJfSwKCSJmZWF0dXJlcyI6IHsKCQkiaG9va3MiOiAidHJ1ZSIKCX0KfQ==
+  dockerconfigjson:   ewoJImF1dGhzIjogewoJCSJnaGNyLmlvIjogewoJCQkiYXV0aCI6ICJBbGV4ZXlQcnV0aWs6WjJod1h6TnBORE16VjJVeFZIbGpVMU14UlVwcVNIaDRWVXBwYzBKRWNGcGtTek14WTJSdlNRPT0iCgkJfQoJfSwKCSJjcmVkc1N0b3JlIjogImRlc2t0b3AiLAoJImN1cnJlbnRDb250ZXh0IjogImRlc2t0b3AtbGludXgiCn0=
 # Database configuration
 database:
   host: postgres
@@ -33,7 +33,7 @@ database:
 monolith:
   enabled: true
   image:
-    repository: ghcr.io/andrew-gurzhi/architecture-cinemaabyss/monolith
+    repository: ghcr.io/AlexeyPrutik/architecture-cinemaabyss/monolith
     tag: latest
     pullPolicy: Always
   replicas: 1
@@ -53,7 +53,7 @@ monolith:
 proxyService:
   enabled: true
   image:
-    repository: ghcr.io/andrew-gurzhi/architecture-cinemaabyss/proxy-service
+    repository: ghcr.io/AlexeyPrutik/architecture-cinemaabyss/proxy-service
     tag: latest
     pullPolicy: Always
   replicas: 1
@@ -73,7 +73,7 @@ proxyService:
 moviesService:
   enabled: true
   image:
-    repository: ghcr.io/andrew-gurzhi/architecture-cinemaabyss/movies-service
+    repository: ghcr.io/AlexeyPrutik/architecture-cinemaabyss/movies-service
     tag: latest
     pullPolicy: Always
   replicas: 1
@@ -93,7 +93,7 @@ moviesService:
 eventsService:
   enabled: true
   image:
-    repository: ghcr.io/andrew-gurzhi/architecture-cinemaabyss/events-service
+    repository: ghcr.io/AlexeyPrutik/architecture-cinemaabyss/events-service
     tag: latest
     pullPolicy: Always
   replicas: 1
